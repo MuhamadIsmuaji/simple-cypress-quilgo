@@ -1,0 +1,8 @@
+{
+	"baseUrl": "https://quilgo.com",
+	"screenshotsFolder": "evidence/screenshots",
+	"videosFolder": "evidence/videos",
+	"dummyEmail": "muhamadismuaji@gmail.com",
+	"correctPassword": "Bagong000000",
+	"wrongPassword": "Mysimplepassword2"
+}
