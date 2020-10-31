@@ -16,7 +16,9 @@ describe('Open Quilgo.com and try login with wrong password', () => {
 		cy.get('[name="password"]')
 			.type('xxxxxxxx')
 
-		cy.get('[type="submit"]').click()
+		cy.get('[type="submit"]')
+			.contains('Sign in')
+			.click()
 
 		// assert error
 		cy.get('[data-on="invalid"]')

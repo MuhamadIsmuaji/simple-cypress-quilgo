@@ -16,7 +16,9 @@ describe('Open Quilgo.com and try login with correct password', () => {
 		cy.get('[name="password"]')
 			.type(Cypress.config('password'))
 
-		cy.get('[type="submit"]').click()
+		cy.get('[type="submit"]')
+			.contains('Sign in')
+			.click()
 
 		// assert logged in
 		cy.url()
