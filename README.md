@@ -32,3 +32,5 @@ npm run cy:run:chrome
 ## run tests with Firefox browser
 npm run cy:run:firefox
 ```
+
+After run tests, you can see the results (screenshot/video) on `cypress/evidence` folder
