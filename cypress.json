@@ -2,7 +2,7 @@
 	"baseUrl": "https://quilgo.com",
 	"screenshotsFolder": "evidence/screenshots",
 	"videosFolder": "evidence/videos",
-	"dummyEmail": "muhamadismuaji@gmail.com",
-	"correctPassword": "Bagong000000",
-	"wrongPassword": "Mysimplepassword2"
+	"trashAssetsBeforeRuns": false,
+	"email": "muhamadismuaji@gmail.com",
+	"password": "Bagong000000"
 }
