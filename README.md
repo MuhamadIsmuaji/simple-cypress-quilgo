@@ -1,6 +1,6 @@
 # simple-cypress-quilgo
 
-Some test for https://quilgo.com/ with cypress. Test on this repo is for open main page and login.
+Some tests for https://quilgo.com/ with cypress. Tests on this repo is for open main page and login.
 
 ## Working Instructions:
 
