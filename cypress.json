@@ -4,5 +4,11 @@
 	"videosFolder": "cypress/evidence/videos",
 	"trashAssetsBeforeRuns": false,
 	"email": "muhamadismuaji@gmail.com",
-	"password": "Bagong000000"
+	"password": "Bagong000000",
+	"reporter": "mochawesome",
+	"reporterOptions": {
+		"overwrite": false,
+		"html": false,
+		"json": true
+	}
 }

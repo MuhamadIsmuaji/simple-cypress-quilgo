@@ -7,8 +7,9 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:info": "cypress info",
-    "cy:run:chrome": "cypress run --browser chrome --config video=false,videoUploadOnPasses=false --spec \"cypress/integration/main/**/*\" && cypress run --browser chrome --spec \"cypress/integration/auth/**/*\"",
-    "cy:run:firefox": "cypress run --browser firefox --config video=false,videoUploadOnPasses=false --spec \"cypress/integration/main/**/*\" && cypress run --browser firefox --spec \"cypress/integration/auth/**/*\""
+    "cy:run:chrome": "cypress run --reporter mochawesome --browser chrome --config video=false,videoUploadOnPasses=false --spec \"cypress/integration/main/**/*\" && --reporter mochawesome cypress run --browser chrome --spec \"cypress/integration/auth/**/*\"",
+    "cy:run:firefox": "cypress run --reporter mochawesome --browser firefox --config video=false,videoUploadOnPasses=false --spec \"cypress/integration/main/**/*\" && --reporter mochawesome cypress run --browser firefox --spec \"cypress/integration/auth/**/*\"",
+    "cy:run:mocha": "node scripts/cypress.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
   },
   "homepage": "https://github.com/MuhamadIsmuaji/simple-cypress-quilgo#readme",
   "devDependencies": {
-    "cypress": "^5.5.0"
+    "cypress": "^5.5.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
   }
 }
