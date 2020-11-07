@@ -18,3 +18,12 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+import addContext from 'mochawesome/addContext'
+
+Cypress.on('test:after:run', (test, runnable) => {
+  const screenshot = `${Cypress.config('screenshotsFolder')}/${Cypress.spec.name}/${runnable.parent.title} -- ${test.title}.png`
+  addContext({ test }, screenshot)
+  const video = `${Cypress.config('videosFolder')}/${Cypress.spec.name}.mp4`
+  addContext({ test }, video)
+})
